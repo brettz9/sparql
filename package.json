@@ -1,0 +1,38 @@
+{
+  "name": "sparql",
+  "displayName": "SPARQL",
+  "description": "Syntax highlighting for SPARQL",
+  "version": "0.0.1",
+  "publisher": "brettz9",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brettz9/sparql"
+  },
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "files": [
+    "syntaxes",
+    "language-configuration.json",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "sparql",
+      "aliases": ["sparql", "sparql"],
+      "extensions": [".rq",".sparql"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "sparql",
+      "scopeName": "source.sparql",
+      "path": "./syntaxes/sparql.tmLanguage.json"
+    }]
+  }
+}
