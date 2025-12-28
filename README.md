@@ -1,7 +1,5 @@
 # sparql README
 
-This is the README for your extension "sparql".
-
 Grammar obtained from <https://github.com/shikijs/shiki/pull/147/files>.
 
 ## Features
