@@ -2,6 +2,12 @@
 
 Grammar obtained from <https://github.com/shikijs/shiki/pull/147/files>.
 
+```sparql
+SELECT * WHERE {
+  <https://bahai-library.com/winters_bahai_glossary> ?p ?o .
+}
+```
+
 ## Features
 
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.

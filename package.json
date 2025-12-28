@@ -18,14 +18,17 @@
   "contributes": {
     "languages": [{
       "id": "sparql",
-      "aliases": ["sparql", "sparql"],
+      "aliases": ["SPARQL", "sparql", "rq"],
       "extensions": [".rq",".sparql"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
       "language": "sparql",
       "scopeName": "source.sparql",
-      "path": "./syntaxes/sparql.tmLanguage.json"
+      "path": "./syntaxes/sparql.tmLanguage.json",
+      "embeddedLanguages": {
+        "source.sparql": "sparql"
+      }
     }]
   }
 }
