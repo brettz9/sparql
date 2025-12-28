@@ -1,0 +1,6 @@
+SELECT ?person ?personLabel (group_concat(?citizenshipLabel;separator="/") AS ?citizenships) {
+  # find all academics
+  ?person wdt:P106 wd:Q3400985 ;
+          wdt:P27  ?citizenship .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en". }
+} GROUP BY ?person ?personLabel HAVING (count(?citizenship) > 2)
