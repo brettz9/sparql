@@ -25,9 +25,14 @@
     "grammars": [{
       "language": "sparql",
       "scopeName": "source.sparql",
-      "path": "./syntaxes/sparql.tmLanguage.json",
+      "path": "./syntaxes/sparql.tmLanguage.json"
+    },
+    {
+      "scopeName": "markdown.sparql.codeblock",
+      "path": "./syntaxes/sparql-injection.json",
+      "injectTo": ["text.html.markdown"],
       "embeddedLanguages": {
-        "source.sparql": "sparql"
+        "meta.embedded.block.sparql": "sparql"
       }
     }]
   }
