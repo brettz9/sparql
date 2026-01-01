@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "sparql",
   "displayName": "SPARQL",
   "description": "Syntax highlighting for SPARQL",
