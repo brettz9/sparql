@@ -30,3 +30,13 @@ ORDER BY DESC(?avgPages)
 ## Release Notes
 
 - See [CHANGELOG.md](./CHANGELOG.md)
+
+## Development
+
+1.
+
+```sh
+vsce package --no-dependencies
+```
+
+2. Publish at <https://marketplace.visualstudio.com/manage/publishers/>
